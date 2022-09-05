@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/tw.js"></script>
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>SIDE NAV</title>
+  </head>
+  <body class="relative">
+    <div class="side-nav fixed min-h-screen top-0 left-0 bottom-0 w-[230px] bg-gray-900 overflow-hidden pt-20">
+      <button
+        class="justify-center hover:bg-rose-700 absolute top-2 right-2 w-10 h-10 rounded-full bg-teal-700 text-white text-2xl flex items-center"
+        id="nav-close"
+      >
+        <i class="bx bx-x"></i>
+      </button>
+      <div class="side-nav__item">
+        <div class="cursor-pointer text-white uppercase text-lg p-4 flex items-center justify-between hover:bg-rose-700">
+          <span>HEALTH</span>
+          <i class="bx bx-chevrons-right text-2xl"></i>
+        </div>
+        <nav class="flex flex-col text-white absolute bg-gray-900 w-full min-h-screen z-10">
+          <a href="#" class="text-xl p-4 hover:bg-rose-600">MEDICAL</a>
+          <a href="#" class="text-xl p-4 hover:bg-rose-600">DISEASE</a>
+          <a href="#" class="text-xl p-4 hover:bg-rose-600">MEDICINE</a>
+          <button class="bg-indigo-800 text-white text-lg uppercase flex items-center p-4 text-left back">
+            <i class="bx bx-chevrons-left text-2xl"></i>
+            BACK
+          </button>
+        </nav>
+      </div>
+      <div class="side-nav__item">
+        <span class="cursor-pointer text-white uppercase text-lg p-4 flex justify-between items-center hover:bg-rose-700">
+          <span>SERVICES</span>
+          <i class="bx bx-chevrons-right text-2xl"></i>
+        </span>
+        <nav class="flex flex-col text-white absolute bg-gray-900 w-full min-h-screen z-10">
+          <a href="#" class="text-xl p-4 hover:bg-rose-600">DIAGNOSIS</a>
+          <a href="#" class="text-xl p-4 hover:bg-rose-600">GAIN</a>
+          <a href="#" class="text-xl p-4 hover:bg-rose-600">FEELING</a>
+          <button class="bg-indigo-800 text-white text-lg uppercase flex items-center p-4 text-left back">
+            <i class="bx bx-chevrons-left text-2xl"></i>
+            BACK
+          </button>
+        </nav>
+      </div>
+    </div>
+    <button class="bg-rose-500 px-5 py-2 rounded" id="nav-toggle"><i class="bx bx-menu text-white text-3xl"></i></button>
+    <script src="js/app.js"></script>
+  </body>
+</html>
